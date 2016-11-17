@@ -1,0 +1,58 @@
+<?php
+
+namespace School\Curriculum\Providers;
+
+
+
+use Illuminate\Support\ServiceProvider;
+
+class CurriculumServiceProvider extends ServiceProvider  {
+
+
+    public function register()
+    {
+        
+    }
+
+    public function boot()
+    {
+        $this->loadMigrations();
+        $this->publishFactories();
+
+
+    }
+
+    public function loadMigrations()
+    {
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+    }
+
+    public function publishFactories()
+    {
+        $this->publishes(
+
+        [
+            __DIR__.'/../../database/factories/StudyFactory.php' =>
+            database_path() .'factories/StudyFactory.php'
+        ],"school_curriculum"
+        );
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+}
