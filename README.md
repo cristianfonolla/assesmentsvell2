@@ -20,6 +20,18 @@ Via Composer
 $ composer require scool/assesments
 ```
 
+Add to file config/app the CurriculumServiceProvider
+``` php
+Scool/assesments/providers/assesmentsServiceProvider::class,
+```
+
+And publish files with
+
+```bash
+php artisan vendor:publish --tag=scool_assesments
+```
+
+
 ## Usage
 
 ``` php

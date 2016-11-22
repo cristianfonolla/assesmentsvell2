@@ -6,7 +6,7 @@
  * Date: 22/11/16
  * Time: 16:16
  */
-class MisTestosTest extends PHPUnit_Framework_TestCase
+class AssesmentsTest extends PHPUnit_Framework_TestCase
 {
 
     /**
