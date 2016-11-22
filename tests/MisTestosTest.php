@@ -20,6 +20,8 @@ class MisTestosTest extends PHPUnit_Framework_TestCase
         //Execucio
         //Assertions
 
+        $this->assertTrue(true);
+
 
     }
 
